@@ -1,0 +1,39 @@
+{
+  "name": "htmlq",
+  "version": "0.5.0",
+  "description": "Like jq, but for HTML.",
+  "keywords": [
+    "CSS",
+    "HTML",
+    "query"
+  ],
+  "license": "MIT",
+  "author": "Michael Maclean <michael@mgdm.net>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mgdm/htmlq"
+  },
+  "type": "module",
+  "bin": {
+    "htmlq": "./bin/htmlq.js"
+  },
+  "main": "./src/main.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "files": [
+    "bin/",
+    "src/",
+    "README.md",
+    "MIGRATION.md",
+    "LICENSE.md"
+  ],
+  "scripts": {
+    "test": "node --test \"test/*.test.js\"",
+    "test:differential": "node test/differential.js"
+  },
+  "dependencies": {
+    "parse5": "^7.1.2",
+    "parse5-htmlparser2-tree-adapter": "^7.0.0"
+  }
+}
